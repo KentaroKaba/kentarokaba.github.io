@@ -1,16 +1,15 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Kentaro Kaba | Webpage</title>
+        <title>Kentaro Kaba | CV</title>
         
-        <meta name="description" content="Webpage Kentaro Kaba">
+        <meta name="description" content="Webpage of Kentaro Kaba">
         
-        <link rel="canonical" href="https://kentarokaba.github.io/">
-        <link rel="alternate" hreflang="en" href="https://kentarokaba.github.io/">
-        <link rel="alternate" hreflang="ja" href="https://kentarokaba.github.io/ja/">
+        <link rel="canonical" href="https://kentarokaba.github.io/cv">
+        <link rel="alternate" hreflang="en" href="https://kentarokaba.github.io/cv">
         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@5/dev.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@5/theme/catppuccin-mocha.user.css">
@@ -45,6 +44,23 @@
                 margin: 0;
             }
             .profile-list dd::before {
+                content: none;
+            }
+
+            .work-list {
+                display: grid;
+                grid-template-columns: max-content 1fr;
+                column-gap: 1rem;
+                row-gap: 0.4rem;
+                margin-left: 1rem;
+            }
+            .work-list dt {
+                font-weight: normal;
+            }
+            .work-list dd {
+                margin: 0;
+            }
+            .work-list dd::before {
                 content: none;
             }
 
@@ -87,10 +103,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><span>Home</span></li>
+                    <li><a href="/ja/">Home</a></li>
                     <li><a href="/ja/publications.html">Publications</a></li>
                     <li><a href="/ja/presentations.html">Presentations</a></li>
-                    <li><a href="/ja/cv.html">CV</a></li>
+                    <li><dev>CV</dev></li>
                 </ul>
             </nav>
         </header>
@@ -103,54 +119,53 @@
 
         <main>
             <section>
-            <h2>プロフィール</h2>
-            
-            <div class="profile-content">
-                <dl class="profile-list">
-                    <dt>名前</dt>
-                    <dd>蒲 健太郎</dd>
-
-                    <dt>生年月日</dt>
-                    <dd>2001/01/02</dd>
-
-                    <dt>所属</dt>
+                <h2>Works</h2>
+                <dl class="work-list">
+                    <dt>Dec 2024 - Present</dt>
                     <dd>
-                    <a href="https://www.isct.ac.jp/">東京科学大学</a>
-                    <a href="https://www.phys.sci.isct.ac.jp/">理学院 物理学系</a>
-                    </dd>
-
-                    <dt>職位</dt>
-                    <dd>大関研究室 博士課程2年</dd>
-
-                    <dt>E-mail</dt>
-                    <dd>kaba.k.df05[at]m.isct.ac.jp</dd>
+                        <b>
+                            Research assistant,
+                        </b>
+                        Institute of Science Tokyo</dd>
                 </dl>
-
-                <img
-                    class="profile-photo"
-                    src="../assets/Kaba_Kentaro.jpg"
-                    alt="Portrait of Kentaro Kaba"
-                >
-            </div>
+            </section>
+            
+            <section>
+                <h2>Education</h2>
+                <dl class="work-list">
+                    <dt>Present</dt>
+                    <dd><b>Ph.D. in Physics,</b> Department of Physics, Institute of Science Tokyo (Ohzeki group)</dd>
+                    <dt>Mar 2025</dt>
+                    <dd><b>Master of Science</b>, Department of Physics, Institute of Science Tokyo (Ohzeki group)</dd>
+                    <dt>Mar 2023</dt>
+                    <dd><b>Bachelor of Science</b>, Department of Physics, Tokyo Institute of Technology (Sekizawa group)</dd>
+                </dl>
             </section>
 
             <section>
-            <h2>研究の興味</h2>
-            <p><b>Keywords: </b> generative AI, stochastic dynamics, physics for machine learning</p>
-            <p>
-                <b>確率的なダイナミクスに基づく生成AI</b>（例: generative diffusion model, conditional flow matching）の数学的構造を解き明かすことに興味を持っています。
-            </p>
+                <h2>Fellowships</h2>
+                <dl class="work-list">
+                    <dt>Apr 2026 - Mar 2028</dt>
+                    <dd>
+                        Program for Development of Next-Generation Front-Runners with Comprehensive Knowledge and Humanity.
+                    </dd>
             </section>
 
             <section>
-            <h2>リンク</h2>
-            <ul>
-                <li><a href="https://scholar.google.com/citations?lang=ja&user=AQhD9d4AAAAJ">Google Scholar</a></li>
-                <li><a href="https://github.com/KentaroKaba">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/kentarokaba/">LinkedIn</a></li>
-                <li><a href="https://orcid.org/0009-0003-9116-0324">ORCID</a></li>
-                <li><a href="https://researchmap.jp/kentarokaba">Reserchmap</a></li>
-            </ul>
+                <h2>Academic Activities</h2>
+            <ol>
+                <li>
+                    <b>
+                        <a href="https://altema.is.tohoku.ac.jp/expo/china/en/">
+                            Quantum Infinity for You in China 2026  
+                        </a>
+                    </b>
+                    <br>
+                    planning, management, lecture
+                    <br>
+                    Hangzhou Institute of Technology, Xidian University, Mar 9 - Mar11, 2026
+                </li>
+            </ol>
             </section>
         </main>
 
