@@ -1,98 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         
         <title>Kentaro Kaba | Publications</title>
         
-        <meta name="description" content="Webpage of Kentaro Kaba">
+        <meta name="description" content="Kentaro Kabaの研究論文一覧。生成拡散モデル、確率ダイナミクス、機械学習、物理学に関する論文を掲載しています。">
+        <meta name="robots" content="index, follow">
         
-        <link rel="canonical" href="https://kentarokaba.github.io/publications">
+        <link rel="canonical" href="https://kentarokaba.github.io/ja/publications">
         <link rel="alternate" hreflang="en" href="https://kentarokaba.github.io/publications">
+        <link rel="alternate" hreflang="ja" href="https://kentarokaba.github.io/ja/publications">
+        <link rel="alternate" hreflang="x-default" href="https://kentarokaba.github.io/publications">
         
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@5/dev.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@5/theme/catppuccin-mocha.user.css">
-
-        <style>
-            .site-header {
-                display: grid;
-                grid-template-columns: 1fr auto;
-                gap: 1rem;
-                align-items: start;
-            }
-
-            .language-switcher {
-                justify-self: end;
-                display: flex;
-                gap: 0.5rem;
-                white-space: nowrap;
-                font-size: 0.95rem;
-            }            
-
-            .profile-list {
-                display: grid;
-                grid-template-columns: max-content 1fr;
-                column-gap: 1rem;
-                row-gap: 0.4rem;
-                margin-left: 1rem;
-            }
-            .profile-list dt {
-                font-weight: bold;
-            }
-            .profile-list dd {
-                margin: 0;
-            }
-            .profile-list dd::before {
-                content: none;
-            }
-
-            .profile-content {
-                display: grid;
-                grid-template-columns: 1fr 160px;
-                gap: 2rem;
-                align-items: center;
-                margin-right: 2rem;
-            }
-
-            .profile-photo {
-                width: 160px;
-                max-width: 100%;
-                border-radius: 0.5rem;
-            }
-
-            @media (max-width: 600px) {
-                .profile-content {
-                grid-template-columns: 1fr;
-                }
-                .profile-photo {
-                width: 160px;
-                justify-self: center;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="/assets/site.css">
+        <script src="/assets/site-header.js" defer></script>
     </head>
 
     <body>
-        <header class="site-header">
-            <div>
-                <h1>Kentaro Kaba</h1>
-                <p>Ph.D. student, Institute of Science Tokyo</p>
-            </div>
-            <div class="language-switcher">
-                <a href="/publications">English</a>
-                <span>/</span>
-                <span>日本語</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/ja/">Home</a></li>
-                    <li><span>Publications</span></li>
-                    <li><a href="/ja/presentations">Presentations</a></li>
-                    <li><a href="/ja/cv">CV</a></li>
-                </ul>
-            </nav>
-        </header>
+        <site-header lang="ja" current-page="publications"></site-header>
 
         <!-- <aside>
             <details open>
@@ -102,19 +30,24 @@
 
         <main>
             <section>
-            <h2>Publications</h2>
-            <h3>Refereed</h3>
+            <h2>論文</h2>
+            <h3>査読付き論文</h3>
             <ol>
                 <li>
                 <b>Kentaro Kaba</b>, Reo Shimizu, Masayuki Ohzeki, Yuki Sughiyama,<br>
                 “<a href="https://journals.aps.org/prresearch/abstract/10.1103/dxp7-4hby">Schrödinger bridge-type diffusion models as an extension of variational autoencoders</a>,”<br>
                 <em>Physical Review Research 7 (3), 033213</em><br>
-                <a href="https://www.isct.ac.jp/en/news/yxrgrbfy915o">Press release</a>
+                <a href="https://www.isct.ac.jp/ja/news/9v3opey66xow">プレスリリース</a>
                 </li>
             </ol>
 
-            <h3>Preprints</h3>
+            <h3>プレプリント</h3>
             <ol>
+                <li>
+                    <b>Kentaro Kaba</b>, Masayuki Ohzeki, Yuki Sughiyama,<br>
+                    “<a href="https://arxiv.org/abs/2608.03117">Simulation-free and finite-time diffusion model</a>,”<br>
+                    <em>arXiv preprint arXiv:2608.03117</em>
+                </li>
                 <li>
                     Kazuyuki Sekizawa, <b>Kentaro Kaba</b>, <br>
                     "<a href="http://arxiv.org/abs/arXiv:2302.07923">Possible Existence of Extremely Neutron-Rich Superheavy Nuclei in Neutron Star Crusts Under a Superstrong Magnetic Field,</a>"<br>

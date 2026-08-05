@@ -3,97 +3,70 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         
         <title>Kentaro Kaba | Webpage</title>
         
-        <meta name="description" content="Webpage Kentaro Kaba">
+        <meta name="description" content="蒲健太郎（Kentaro Kaba）は東京科学大学理学院物理学系の博士課程学生です。生成AI、拡散モデル、確率ダイナミクスを研究しています。">
+        <meta name="robots" content="index, follow">
         
-        <link rel="canonical" href="https://kentarokaba.github.io/">
+        <link rel="canonical" href="https://kentarokaba.github.io/ja/">
         <link rel="alternate" hreflang="en" href="https://kentarokaba.github.io/">
         <link rel="alternate" hreflang="ja" href="https://kentarokaba.github.io/ja/">
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@5/dev.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@intergrav/dev.css@5/theme/catppuccin-mocha.user.css">
+        <link rel="alternate" hreflang="x-default" href="https://kentarokaba.github.io/">
 
-        <style>
-            .site-header {
-                display: grid;
-                grid-template-columns: 1fr auto;
-                gap: 1rem;
-                align-items: start;
-            }
+        <meta property="og:type" content="profile">
+        <meta property="og:title" content="Kentaro Kaba | Webpage">
+        <meta property="og:description" content="東京科学大学理学院物理学系の博士課程学生。生成AI、拡散モデル、確率ダイナミクスを研究しています。">
+        <meta property="og:url" content="https://kentarokaba.github.io/ja/">
+        <meta property="og:image" content="https://kentarokaba.github.io/assets/Kaba_Kentaro_640.jpg">
+        <meta property="og:image:alt" content="蒲 健太郎（Kentaro Kaba）のプロフィール写真">
+        <meta property="og:locale" content="ja_JP">
+        <meta property="og:locale:alternate" content="en_US">
+        <meta name="twitter:card" content="summary">
 
-            .language-switcher {
-                justify-self: end;
-                display: flex;
-                gap: 0.5rem;
-                white-space: nowrap;
-                font-size: 0.95rem;
-            }            
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "url": "https://kentarokaba.github.io/ja/",
+            "dateModified": "2026-08-05",
+            "mainEntity": {
+                "@type": "Person",
+                "@id": "https://kentarokaba.github.io/#person",
+                "name": "蒲 健太郎",
+                "alternateName": "Kentaro Kaba",
+                "url": "https://kentarokaba.github.io/",
+                "image": "https://kentarokaba.github.io/assets/Kaba_Kentaro_640.jpg",
+                "jobTitle": "博士課程学生",
+                "affiliation": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "東京科学大学",
+                    "url": "https://www.isct.ac.jp/ja"
+                },
+                "knowsAbout": [
+                    "生成AI",
+                    "拡散モデル",
+                    "確率ダイナミクス",
+                    "機械学習の物理学"
+                ],
+                "sameAs": [
+                    "https://scholar.google.com/citations?user=AQhD9d4AAAAJ",
+                    "https://github.com/KentaroKaba",
+                    "https://www.linkedin.com/in/kentarokaba/",
+                    "https://orcid.org/0009-0003-9116-0324",
+                    "https://researchmap.jp/kentarokaba"
+                ]
+            }
+        }
+        </script>
 
-            .profile-list {
-                display: grid;
-                grid-template-columns: max-content 1fr;
-                column-gap: 1rem;
-                row-gap: 0.4rem;
-                margin-left: 1rem;
-            }
-            .profile-list dt {
-                font-weight: bold;
-            }
-            .profile-list dd {
-                margin: 0;
-            }
-            .profile-list dd::before {
-                content: none;
-            }
-
-            .profile-content {
-                display: grid;
-                grid-template-columns: 1fr 160px;
-                gap: 2rem;
-                align-items: center;
-                margin-right: 2rem;
-            }
-
-            .profile-photo {
-                width: 160px;
-                max-width: 100%;
-                border-radius: 0.5rem;
-            }
-
-            @media (max-width: 600px) {
-                .profile-content {
-                grid-template-columns: 1fr;
-                }
-                .profile-photo {
-                width: 160px;
-                justify-self: center;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="/assets/site.css">
+        <script src="/assets/site-header.js" defer></script>
     </head>
 
     <body>
-        <header class="site-header">
-            <div>
-                <h1>Kentaro Kaba</h1>
-                <p>Ph.D. student, Institute of Science Tokyo</p>
-            </div>
-            <div class="language-switcher">
-                <a href="/">English</a>
-                <span>/</span>
-                <span>日本語</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><span>Home</span></li>
-                    <li><a href="/ja/publications">Publications</a></li>
-                    <li><a href="/ja/presentations">Presentations</a></li>
-                    <li><a href="/ja/cv">CV</a></li>
-                </ul>
-            </nav>
-        </header>
+        <site-header lang="ja" current-page="home"></site-header>
 
         <!-- <aside>
             <details open>
@@ -128,15 +101,19 @@
 
                 <img
                     class="profile-photo"
-                    src="../assets/Kaba_Kentaro.jpg"
-                    alt="Portrait of Kentaro Kaba"
+                    src="/assets/Kaba_Kentaro_320.webp"
+                    srcset="/assets/Kaba_Kentaro_160.webp 160w, /assets/Kaba_Kentaro_320.webp 320w, /assets/Kaba_Kentaro_480.webp 480w, /assets/Kaba_Kentaro.webp 640w"
+                    sizes="160px"
+                    alt="Kentaro Kabaのプロフィール写真"
+                    width="160"
+                    height="128"
                 >
             </div>
             </section>
 
             <section>
             <h2>研究の興味</h2>
-            <p><b>Keywords: </b> generative AI, stochastic dynamics, physics for machine learning</p>
+            <p><b>キーワード: </b> generative AI, stochastic dynamics, physics for machine learning</p>
             <p>
                 <b>確率的なダイナミクスに基づく生成AI</b>（例: generative diffusion model, conditional flow matching）の数学的構造を解き明かすことに興味を持っています。
             </p>
@@ -149,7 +126,7 @@
                 <li><a href="https://github.com/KentaroKaba">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/kentarokaba/">LinkedIn</a></li>
                 <li><a href="https://orcid.org/0009-0003-9116-0324">ORCID</a></li>
-                <li><a href="https://researchmap.jp/kentarokaba">Reserchmap</a></li>
+                <li><a href="https://researchmap.jp/kentarokaba">researchmap</a></li>
             </ul>
             </section>
         </main>
